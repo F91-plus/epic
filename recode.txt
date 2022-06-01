@@ -1,0 +1,41 @@
+let 과 const 차이
+const 는 constant(상수) 라는 것이고, 값이 바뀔 수 없다 (즉, 한번 정해지면 다음 값을 바꿀 수 없다.)
+let 은 새로운 변수를 생성할 때 사용하고, 값이 바뀔 수 있다. (즉, 어디선가 값이 변경 될 수도 있다.)
+과거에는 var로 사용했다. (요즘에는 값을 한 눈에 알아볼 수 없어서 사용하지 않는다.)
+
+boolean: true / false
+undefined: 값이 정의 되어있지 않음
+null: 비어있음
+
+array: [a,b,c] 0=a, 1=b, 2=c
+
+object: const xx = {a: a, b: b, c: c ..}
+console.log(xx.a) --> a
+xx 에 추가 할게 있으면 그냥 xx.zz = "zz" 하면 마지막에 추가된다.
+배열은 값이 어떤 값인지 알 수 없지만 object를 사용하면 어떠한 값인지 알 수 있다.
+
+function
+function aa (receive) {
+    console.log(inputdata)  --> bb
+}
+aa("bb");
+console.log(inputdata); --> 에러 발생, 함수 블록 안에서만 사용하기 때문이다.
+내부에서 밖 순서대로 실행된다.
+
+return을 함으로써, let,const 값은 변수에 값을 지정할 수 있다.
+
+prompt 문은 이제 사용하지 않는다 (예쁘지가 않음, 자바스크립트 문을 멈추고 요청을 기다리기 때문이다.)
+typeof  parseInt()  
+isNaN: type이 숫자인지 아닌지 판단함 숫자가 아니면 true 숫자면 false
+
+if
+
+getElementById: 같은게 있으면 배열로 다 보여줌
+byname: 배열로 가져온다.
+querySelector: 같은게 있어도 첫 번째 요소만 가져온다. (css 요소 부르는 것처림 부른다.)
+querySelectorAll: 해당 되는거 다 가지고 온다.
+
+listen 하고 싶은 event 를 찾는 방법
+1. h1 html element mdn (모질라)
+2. console.dir(title)
+검색하면 방법을 알 수 있다.
